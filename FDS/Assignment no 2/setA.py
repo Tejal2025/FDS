@@ -1,5 +1,5 @@
 #SET A
-'''
+
 #1
 import numpy as np
 data=np.array([[0,1],[2,3]])
@@ -16,7 +16,6 @@ p1=[1,4,2]
 p2=[3,4,6]
 dist=np.linalg.norm(p1,p2)
 print("Euclidian dist betwwen two points is:",dist)
-
 
 #3
 import pandas as pd
@@ -44,7 +43,6 @@ y=[6,7,8,9,10]
 n=len(x)
 print("Manhattan distance is:",distsum(x,y,n))
 
-
 #5
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -52,7 +50,6 @@ nums=np.array([0.5,0.7,1.1,1.2,1.3,2.1])
 bins=np.array([0,1,2,3])
 plt.hist(nums,bins,color="blue",alpha=0.2)
 plt.show()
-'''
 
 #6
 import pandas as pd
