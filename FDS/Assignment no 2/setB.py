@@ -1,7 +1,7 @@
 #Set B
 
 #1
-'''
+
 import pandas as pd
 from matplotlib.pyplot import*
 df=pd.read_csv("Iris.csv")
@@ -28,6 +28,3 @@ print("median of class attribute sepalLengthCm is:",Meds)
 
 Meds=df["PetalLengthCm"].mean().round(2)
 print("median of class attribute petalLengthCm is:",Meds)
-'''
-
-
