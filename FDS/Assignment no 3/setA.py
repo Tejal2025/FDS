@@ -25,15 +25,16 @@ print(MeanSal)
 df["Salary"].fillna(Mean,inplace=True)
 print(df)
 
+#3
+#a)
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 labelencoder=LabelEncoder()
 df['Country']=labelencoder.fit_transform(df['Country'])
 print(df)
 
+#b)
 enc=OneHotEncoder(handle_unknown='ignore')
 enc_df=pd.DataFrame(enc.fit_transform(df[['Purchased']]).toarray())
 df=df.join(enc_df)
 print(df)
-
-
