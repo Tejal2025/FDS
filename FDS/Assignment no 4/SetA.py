@@ -5,34 +5,38 @@ import matplotlib.pyplot as plt
 
 x=np.random.randn(50)
 
+#1
 #Line chart
-'''plt.plot(x)
+plt.plot(x)
 plt.title("line chart")
-plt.show()'''
+plt.show()
 
 #Scatter plot
-'''plt.scatter(range(len(x)),x,color='m',marker='d')
+plt.scatter(range(len(x)),x,color='m',marker='d')
 plt.title("scatter plot")
-plt.show()'''
+plt.show()
 
 #Histogram
-'''plt.hist(x,color='black')
+plt.hist(x,color='black')
 plt.title("Histogarm")
-plt.show()'''
+plt.show()
 
+#2
 #Box plot
-'''plt.boxplot(x,vert=False)
+plt.boxplot(x,vert=False)
 plt.title("Box Plot")
-plt.show()'''
+plt.show()
 
+#3 #4
 #Pie chart & Bar chart
-'''t=[50,60,70,80,90]
+t=[50,60,70,80,90]
 s=["OS","FDS","PYTHON","CPP","BC"]
 plt.pie(t,labels=s)
 
 plt.bar(s,t)
-plt.show()'''
+plt.show()
 
+#5 #6
 #Iris
 iris=sns.load_dataset("iris")
 s=iris['species'].value_counts()
